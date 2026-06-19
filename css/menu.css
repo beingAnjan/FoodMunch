@@ -1,0 +1,336 @@
+/* ==========================================
+   MENU PAGE
+========================================== */
+
+.menu-page{
+    background:var(--clr-light);
+    padding:120px 30px 50px;
+}
+
+.page-title{
+    text-align:center;
+    font-size:clamp(2rem,4vw,2.8rem);
+    font-weight:800;
+    margin-bottom:40px;
+}
+
+/* ==========================================
+   Menu Grid
+========================================== */
+
+.menu-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.menu-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    display:flex;
+    flex-direction:column;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+}
+
+.menu-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-card__body{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    flex:1;
+}
+
+.menu-card__body h5{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.menu-card__body p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:15px;
+    flex:1;
+}
+
+.menu-card__body h3{
+    color:var(--clr-primary);
+    margin-bottom:15px;
+}
+
+.btn-add{
+    background:var(--clr-primary);
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    padding:12px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:600;
+}
+
+.btn-add:hover{
+    background:#d98f00;
+}
+
+/* ==========================================
+   Toast
+========================================== */
+
+.toast{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#28a745;
+    color:#fff;
+    padding:15px 25px;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    opacity:0;
+    transform:translateY(20px);
+    transition:.4s;
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    z-index:9999;
+}
+
+.toast.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* ==========================================
+   Cart Icon
+========================================== */
+
+.cart-icon{
+    position:relative;
+    margin-left:20px;
+    font-size:26px;
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.cart-icon:hover{
+    color:var(--clr-primary);
+}
+
+.cart-icon span{
+    position:absolute;
+    top:-8px;
+    right:-12px;
+    width:22px;
+    height:22px;
+    background:#ff3b30;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:12px;
+    font-weight:bold;
+}
+
+/* ==========================================
+   Mini Cart
+========================================== */
+
+.cart-section{
+    max-width:1100px;
+    margin:40px auto;
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+}
+
+.cart-section h2{
+    margin-bottom:20px;
+}
+
+#cartList{
+    list-style:none;
+    padding:0;
+    margin-bottom:25px;
+    max-height:280px;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+
+#cartList::-webkit-scrollbar{
+    width:8px;
+}
+
+#cartList::-webkit-scrollbar-track{
+    background:#f1f1f1;
+    border-radius:10px;
+}
+
+#cartList::-webkit-scrollbar-thumb{
+    background:var(--clr-primary);
+    border-radius:10px;
+}
+
+#cartList::-webkit-scrollbar-thumb:hover{
+    background:#d98f00;
+}
+
+#cartList li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f5f5f5;
+    padding:12px 15px;
+    margin-bottom:10px;
+    border-radius:10px;
+    font-size:17px;
+}
+
+/* ==========================================
+   Go To Cart Button
+========================================== */
+
+.go-cart-container{
+    display:flex;
+    justify-content:center;
+    margin:50px 0;
+}
+
+.go-cart-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:14px 35px;
+    border:none;
+    border-radius:50px;
+    background:var(--clr-primary);
+    color:#fff;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.go-cart-btn:hover{
+    background:#d98f00;
+    transform:translateY(-3px);
+}
+
+/* ==========================================
+   Quantity Box
+========================================== */
+
+.quantity-box{
+    width:120px;
+    height:42px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:2px solid var(--clr-primary);
+    border-radius:30px;
+    overflow:hidden;
+}
+
+.quantity-box button{
+    width:36px;
+    height:42px;
+    border:none;
+    background:var(--clr-primary);
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.quantity-box button:hover{
+    background:#d98f00;
+}
+
+.quantity-box span{
+    width:48px;
+    text-align:center;
+    font-size:20px;
+    font-weight:700;
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:768px){
+
+    .menu-page{
+        padding:100px 20px 40px;
+    }
+
+    .page-title{
+        margin-bottom:30px;
+    }
+
+    .menu-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:16px;
+    }
+
+    .menu-card img{
+        height:140px;
+    }
+
+    .menu-card__body{
+        padding:14px;
+    }
+
+    .menu-card__body h5{
+        font-size:18px;
+    }
+
+    .menu-card__body p{
+        font-size:14px;
+        line-height:1.5;
+        margin-bottom:12px;
+    }
+
+    .menu-card__body h3{
+        font-size:20px;
+    }
+
+    .btn-add{
+        padding:10px;
+        font-size:14px;
+    }
+
+    .cart-section{
+        padding:20px;
+    }
+
+    #cartList li{
+        font-size:15px;
+    }
+
+    .go-cart-btn{
+        min-width:200px;
+    }
+
+    .toast{
+        left:20px;
+        right:20px;
+        bottom:20px;
+        text-align:center;
+    }
+
+}

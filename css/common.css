@@ -1,0 +1,475 @@
+/* ==========================================
+   COMMON.CSS
+   Shared Across All Pages
+========================================== */
+
+/* Smooth Scrolling */
+
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    scroll-margin-top:10px;
+}
+
+/* ==========================================
+   Reset
+========================================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ==========================================
+   Root Variables
+========================================== */
+
+:root{
+
+    --clr-primary:#f4a614;
+    --clr-dark:#1a1a2e;
+    --clr-light:#f9f9f9;
+    --clr-muted:#6b7280;
+
+    --radius:12px;
+    --gap:2rem;
+
+}
+
+/* ==========================================
+   Body
+========================================== */
+
+body{
+
+    font-family:'Segoe UI',sans-serif;
+
+    color:var(--clr-dark);
+
+    background:#fff;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+/* ==========================================
+   Loading Overlay
+========================================== */
+
+#loadingOverlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(6px);
+
+    display:none;
+
+    place-items:center;
+
+    z-index:9999;
+
+}
+
+#loadingOverlay.active{
+
+    display:grid;
+
+}
+
+.spinner{
+
+    width:52px;
+
+    height:52px;
+
+    border:5px solid #e5e7eb;
+
+    border-top-color:var(--clr-primary);
+
+    border-radius:50%;
+
+    animation:spin .8s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ==========================================
+   Shared Buttons
+========================================== */
+
+.btn-primary-custom{
+
+    background:var(--clr-primary);
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:50px;
+
+    padding:14px 35px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    transition:.3s;
+
+}
+
+.btn-primary-custom:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+.btn-outline-custom{
+
+    background:transparent;
+
+    color:var(--clr-primary);
+
+    border:2px solid var(--clr-primary);
+
+    padding:.7rem 1.6rem;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.3s;
+
+    min-width: 200px;
+
+}
+
+.btn-outline-custom:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+
+/* ==========================================
+   Navbar
+========================================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 35px;
+
+    background:rgba(26,26,46,.92);
+
+    backdrop-filter:blur(10px);
+
+    z-index:1000;
+
+}
+
+.nav-logo img{
+
+    height:55px;
+    border-radius: 50%;
+
+}
+
+.navbar__left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.navbar__right{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.nav-links{
+
+    display:flex;
+
+    gap:25px;
+
+    list-style:none;
+
+}
+
+.nav-links a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:var(--clr-primary);
+
+}
+
+/* ==========================================
+   Back Button
+========================================== */
+
+.btn-back{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:10px 20px;
+
+    background:transparent;
+
+    border:1.5px solid rgba(255,255,255,.4);
+
+    color:#fff;
+
+    border-radius:40px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.btn-back:hover{
+
+    background:rgba(255,255,255,.12);
+
+    border-color:#fff;
+
+}
+
+.btn-back svg{
+
+    width:16px;
+
+    height:16px;
+
+    stroke:#fff;
+
+    fill:none;
+
+    stroke-width:2.5;
+
+}
+
+/* ==========================================
+   Shared Sections
+========================================== */
+
+.site-section{
+
+    padding:5rem 2rem;
+
+}
+
+.site-section--alt{
+
+    background:var(--clr-light);
+
+}
+
+.section-inner{
+
+    max-width:1140px;
+
+    margin:auto;
+
+}
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:3rem;
+
+}
+
+.section-header h2{
+
+    font-size:2.3rem;
+
+    margin-bottom:15px;
+
+}
+
+.section-header p{
+
+    color:var(--clr-muted);
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   Hero Buttons Container
+========================================== */
+
+.hero__actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu-toggle:hover{
+    color:var(--clr-primary);
+}
+
+/* ==========================================
+   Mobile Navigation
+========================================== */
+
+.menu-toggle{
+    display:none;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu-toggle:hover{
+    color:var(--clr-primary);
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:768px){
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    .nav-logo img{
+        height:45px;
+    }
+
+    .menu-toggle{
+        display:block;
+        z-index:1100;
+    }
+
+    .nav-links{
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:rgba(26,26,46,.98);
+        backdrop-filter:blur(10px);
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+        overflow:hidden;
+        max-height:0;
+        transition:max-height .45s ease;
+        box-shadow:0 10px 25px rgba(0,0,0,.25);
+    }
+
+    .nav-links.active{
+        max-height:450px;
+        padding:30px 0;
+    }
+
+    .nav-links li{
+        opacity:0;
+        transform:translateY(-15px);
+        transition:.35s;
+    }
+
+    .nav-links.active li{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+    .btn-primary-custom{
+        min-width:200px;
+    }
+
+}

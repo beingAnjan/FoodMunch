@@ -1,0 +1,358 @@
+/* ==========================================
+   INDEX.CSS
+========================================== */
+
+/* Hero */
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    background:url("../images/hero-bg.png") center/cover no-repeat;
+    display:grid;
+    place-items:center;
+    text-align:center;
+    padding:2rem;
+    overflow:hidden;
+}
+
+.hero-tagline{
+    color:#f4a614;
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    text-shadow:0 3px 10px rgba(0,0,0,.5);
+}
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.15);
+    z-index:1;
+}
+
+.hero__content{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1.2rem;
+    color:#fff;
+}
+
+.hero__content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    color:#fff;
+}
+
+.hero__title{
+    font-size:70px;
+    font-weight:800;
+    line-height:1.05;
+    letter-spacing:-2px;
+    text-shadow:0 6px 25px rgba(0,0,0,.7);
+}
+
+.hero__sub{
+    font-size:1.1rem;
+    opacity:.85;
+}
+
+.hero .btn-primary-custom{
+    padding:16px 42px;
+    font-size:18px;
+    font-weight:600;
+    border-radius:50px;
+    box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+.hero .btn-primary-custom:hover{
+    transform:translateY(-4px);
+}
+
+/* ==========================================
+   Why Choose Us
+========================================== */
+
+.wcu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:var(--gap);
+}
+
+.wcu-card{
+    display:flex;
+    flex-direction:column;
+    background:#fff;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.wcu-card:hover{
+    transform:translateY(-5px);
+}
+
+.wcu-card img{
+    width:100%;
+    aspect-ratio:16/9;
+    object-fit:cover;
+}
+
+.wcu-card__text{
+    padding:20px;
+}
+
+.wcu-card h5{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.wcu-card p{
+    color:var(--clr-muted);
+    line-height:1.6;
+}
+
+/* ==========================================
+   Explore Menu
+========================================== */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+    gap:var(--gap);
+}
+
+.menu-card{
+    background:#fff;
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:0 4px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+}
+
+.menu-card img{
+    width:100%;
+    aspect-ratio:4/3;
+    object-fit:cover;
+}
+
+.menu-card__label{
+    padding:18px;
+    font-size:18px;
+    font-weight:700;
+}
+
+.menu-cta{
+    display:flex;
+    justify-content:center;
+    margin-top:40px;
+}
+
+/* ==========================================
+   Healthy Food
+========================================== */
+
+.healthy-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.healthy-video{
+    width:100%;
+    aspect-ratio:16/9;
+    border:none;
+    border-radius:var(--radius);
+}
+
+.healthy-content h2{
+    font-size:clamp(1.5rem,3vw,2.2rem);
+    margin-bottom:20px;
+}
+
+.healthy-content p{
+    color:var(--clr-muted);
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.feature-list{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    margin-bottom:25px;
+}
+
+.feature-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.feature-item img{
+    width:36px;
+    height:36px;
+}
+
+.feature-item span{
+    font-weight:600;
+}
+
+/* ==========================================
+   Delivery & Payment
+========================================== */
+
+.delivery-layout{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.delivery-image img{
+    max-width:400px;
+    margin:auto;
+}
+
+.delivery-content h2{
+    font-size:clamp(1.5rem,3vw,2.2rem);
+    margin-bottom:20px;
+}
+
+.delivery-content p{
+    color:var(--clr-muted);
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+/* ==========================================
+   Follow Us
+========================================== */
+
+.follow-section{
+    background:var(--clr-dark);
+    color:#fff;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.follow-section h2{
+    font-size:32px;
+    margin-bottom:30px;
+}
+
+.social-row{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+}
+
+.social-row i{
+    font-size:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social-row i:hover{
+    color:var(--clr-primary);
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media (max-width:768px){
+
+    .menu-grid{
+        gap:12px;
+    }
+
+    .menu-card img{
+        aspect-ratio:1/1;
+    }
+
+    .menu-card__label{
+        padding:12px;
+        font-size:15px;
+        text-align:center;
+    }
+
+    .hero{
+        min-height:85vh;
+        padding:1.5rem;
+    }
+
+    .hero-tagline{
+        font-size:14px;
+        letter-spacing:2px;
+    }
+
+    .hero__title{
+        font-size:42px;
+        line-height:1.2;
+    }
+
+    .hero__sub{
+        font-size:15px;
+        max-width:320px;
+    }
+
+    .hero .btn-primary-custom{
+        padding:14px 30px;
+        font-size:16px;
+    }
+
+    .wcu-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .menu-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .healthy-layout,
+    .delivery-layout{
+        grid-template-columns:1fr;
+    }
+
+    .healthy-content,
+    .delivery-content{
+        text-align:center;
+    }
+
+    .feature-item{
+        justify-content:center;
+    }
+
+    .delivery-image{
+        order:-1;
+    }
+
+    .delivery-image img{
+        width:90%;
+    }
+
+    .follow-section h2{
+        font-size:28px;
+    }
+
+    .social-row{
+        gap:18px;
+    }
+
+    .social-row i{
+        font-size:24px;
+    }
+
+}

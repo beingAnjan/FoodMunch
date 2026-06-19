@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Munch</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/4add7e6c9f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay">
+    <div class="spinner"></div>
+</div>
+
+<!-- ── Navigation ── -->
+<nav class="navbar">
+
+    <div class="navbar__left">
+        <div class="nav-logo">
+            <img src="images/logo.png" alt="Food Munch">
+        </div>
+    </div>
+
+    <div class="navbar__right">
+
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#wcu">Why Choose Us?</a></li>
+            <li><a href="#explore">Explore Menu</a></li>
+            <li><a href="#healthy">Healthy Food</a></li>
+            <li><a href="#delivery">Delivery & Payment</a></li>
+            <li><a href="#followus">Follow Us</a></li>
+        </ul>
+
+    </div>
+
+</nav>
+
+<!-- ── Hero ── -->
+<div id="hero" class="hero">
+    <div class="hero__content">
+        <p class="hero-tagline">WELCOME TO FOOD MUNCH</p>
+        <h1 class="hero__title">Get Delicious Food<br>Anytime</h1>
+        <p class="hero__sub">Eat Smart &amp; Healthy</p>
+        <div class="hero__actions">
+            <button id="orderNow" class="btn-primary-custom " onclick="goToMenu()">Order Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- ── Why Choose Us ── -->
+<div id="wcu" class="site-section">
+    <div class="section-inner">
+        <header class="section-header">
+            <h2>Why Choose Us?</h2>
+            <p>We use original recipes and classic versions of famous food items.</p>
+        </header>
+        <div class="wcu-grid">
+            <div class="wcu-card">
+                <img src="images/food-serve.png" alt="Food Service">
+                <div class="wcu-card__text">
+                    <h5>Food Service</h5>
+                    <p>Fine dining experience at your home.</p>
+                </div>
+            </div>
+            <div class="wcu-card">
+                <img src="images/fruits.png" alt="Fresh Food">
+                <div class="wcu-card__text">
+                    <h5>Fresh Food</h5>
+                    <p>Fresh fruits &amp; vegetables directly from farms.</p>
+                </div>
+            </div>
+            <div class="wcu-card">
+                <img src="images/offers.png" alt="Best Offers">
+                <div class="wcu-card__text">
+                    <h5>Best Offers</h5>
+                    <p>Up to 50% OFF with exclusive promo codes.</p>
+                </div>
+            </div>
+            <div class="wcu-card">
+                <img src="images/hygienic.jpg" alt="Fresh Food">
+                <div class="wcu-card__text">
+                    <h5>Hygienic Kitchen</h5>
+                    <p>Fresh fruits &amp; vegetables directly from farms.</p>
+                </div>
+            </div>
+            <div class="wcu-card">
+                <img src="images/easy-ordering.jpg" alt="Food Service">
+                <div class="wcu-card__text">
+                    <h5>Easy Online Ordering</h5>
+                    <p>Fine dining experience at your home.</p>
+                </div>
+            </div>
+            <div class="wcu-card">
+                <img src="images/tracking.jpg" alt="Live Order Tracking">
+                <div class="wcu-card__text">
+                    <h5>Live Order Tracking</h5>
+                    <p>Track your order in real time on the map.</p>
+                </div>
+            </div>
+            <div class="wcu-card">
+                <img src="images/delivery.jpg" alt="Fast Delivery">
+                <div class="wcu-card__text">
+                    <h5>Fast Delivery</h5>
+                    <p>Hot food delivered in under 30 minutes.</p>
+                </div>
+            </div>
+            <div class="wcu-card">
+                <img src="images/support.jpg" alt="24/7 Support">
+                <div class="wcu-card__text">
+                    <h5>24/7 Support</h5>
+                    <p>We're available anytime you need help.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── Explore Menu ── -->
+<div id="explore" class="site-section site-section--alt">
+    <div class="section-inner">
+        <header class="section-header">
+            <h2>Explore Menu</h2>
+            <p>Discover a wide variety of delicious dishes crafted with fresh ingredients and authentic recipes.</p>
+        </header>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/starters.jpg" alt="Starters & Snacks">
+                <div class="menu-card__label">Starters &amp; Snacks</div>
+            </div>
+            <div class="menu-card">
+                <img src="images/biryani.jpg" alt="Rice & Biryani">
+                <div class="menu-card__label">Rice &amp; Biryani</div>
+            </div>
+            <div class="menu-card">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <div class="menu-card__label">Pizza</div>
+            </div>
+            <div class="menu-card">
+                <img src="images/burger.jpg" alt="Burgers & Sandwiches">
+                <div class="menu-card__label">Burgers &amp; Sandwiches</div>
+            </div>
+            <div class="menu-card">
+                <img src="images/healthy-bowl.jpg" alt="Healthy Bowls">
+                <div class="menu-card__label">Healthy Bowls</div>
+            </div>
+            <div class="menu-card">
+                <img src="images/pasta.jpg" alt="Pasta & Noodles">
+                <div class="menu-card__label">Pasta &amp; Noodles</div>
+            </div>
+            <div class="menu-card">
+                <img src="images/desserts.jpg" alt="Desserts & Sweets">
+                <div class="menu-card__label">Desserts &amp; Sweets</div>
+            </div>
+            <div class="menu-card">
+                <img src="images/drinks.jpg" alt="Juices & Drinks">
+                <div class="menu-card__label">Juices &amp; Drinks</div>
+            </div>
+        </div>
+        <div class="menu-cta">
+            <button class="btn-primary-custom" onclick="goToMenu()">View Menu</button>
+        </div>
+    </div>
+</div>
+
+<!-- ── Healthy Food ── -->
+<div id="healthy" class="site-section">
+    <div class="section-inner">
+        <div class="healthy-layout">
+            <iframe class="healthy-video"
+                src="https://www.youtube.com/embed/U-e0WgjkXpE"
+                title="YouTube video"
+                allowfullscreen>
+            </iframe>
+            <div class="healthy-content">
+                <h2>Fresh, Healthy &amp; Organic</h2>
+                <p>Enjoy the goodness of fresh, healthy, and organic food prepared with care. Our ingredients are sourced from trusted farms to ensure quality and taste.</p>
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <img src="images/fresh-meals.jpg" alt="">
+                        <span>Freshly Prepared Meals</span>
+                    </div>
+                    <div class="feature-item">
+                        <img src="images/nutrition.jpg" alt="">
+                        <span>Rich in Nutrition &amp; Taste</span>
+                    </div>
+                </div>
+                <button class="btn-primary-custom" onclick="watchVideo()">Watch Video</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── Delivery & Payment ── -->
+<div id="delivery" class="site-section site-section--alt">
+    <div class="section-inner">
+        <div class="delivery-layout">
+            <div class="delivery-content">
+                <h2>Delivery and Payment</h2>
+                <p>Enjoy hassle-free payment with multiple options and live tracking right to your doorstep.</p>
+                <button class="btn-primary-custom" onclick="goToMenu()">Order Now</button>
+            </div>
+            <div class="delivery-image">
+                <img src="images/delivery-payment.jpg" alt="Delivery and Payment">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ── Follow Us ── -->
+<footer id="followus" class="follow-section">
+    <h2>Follow Us</h2>
+    <div class="social-row">
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+</footer>
+
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>

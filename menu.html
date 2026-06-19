@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Food Munch - Menu</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/menu.css">
+
+    <script src="https://kit.fontawesome.com/4add7e6c9f.js"
+            crossorigin="anonymous"></script>
+
+</head>
+
+<body class="menu-page">
+
+<!-- Loading -->
+
+<div id="loadingOverlay">
+
+    <div class="spinner"></div>
+
+</div>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+
+    <div class="navbar__left">
+
+        <div class="nav-logo">
+
+            <img src="images/logo.png">
+
+        </div>
+
+        <button class="btn-back" onclick="goBack()"> <i class="bi bi-chevron-left"></i> Back</button>
+
+    </div>
+
+    <div class="navbar__right">
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+        </ul>
+
+        <div class="cart-icon" onclick="goToCart()">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cartCount">0</span>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<div id="toast" class="toast">
+    Item added to cart
+</div>
+
+<h1 class="page-title">
+
+    Our Delicious Menu
+
+</h1>
+
+<div class="menu-grid">
+
+    <!-- Pizza -->
+
+    <div class="menu-card">
+
+        <img src="images/pizza.jpg">
+
+        <div class="menu-card__body">
+
+            <h5>Pizza</h5>
+
+            <p>Cheesy loaded pizza with fresh toppings.</p>
+
+            <h3>₹250</h3>
+
+            <button class="btn-add"
+
+            onclick="addToCart({
+
+                name:'Pizza',
+
+                price:250
+
+            })">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Burger -->
+
+    <div class="menu-card">
+
+        <img src="images/burger.jpg">
+
+        <div class="menu-card__body">
+
+            <h5>Burger</h5>
+
+            <p>Juicy grilled chicken burger.</p>
+
+            <h3>₹180</h3>
+
+            <button class="btn-add"
+
+            onclick="addToCart({
+
+                name:'Burger',
+
+                price:180
+
+            })">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Biryani -->
+
+    <div class="menu-card">
+
+        <img src="images/biryani.jpg">
+
+        <div class="menu-card__body">
+
+            <h5>Biryani</h5>
+
+            <p>Hyderabadi Chicken Biryani.</p>
+
+            <h3>₹300</h3>
+
+            <button class="btn-add"
+
+            onclick="addToCart({
+
+                name:'Biryani',
+
+                price:300
+
+            })">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Pasta -->
+
+    <div class="menu-card">
+
+        <img src="images/pasta.jpg">
+
+        <div class="menu-card__body">
+
+            <h5>Pasta</h5>
+
+            <p>Italian creamy white sauce pasta.</p>
+
+            <h3>₹220</h3>
+
+            <button class="btn-add"
+
+            onclick="addToCart({
+
+                name:'Pasta',
+
+                price:220
+
+            })">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Healthy Bowl -->
+
+    <div class="menu-card">
+
+        <img src="images/healthy-bowl.jpg">
+
+        <div class="menu-card__body">
+
+            <h5>Healthy Bowl</h5>
+
+            <p>Healthy vegetables and grains.</p>
+
+            <h3>₹200</h3>
+
+            <button class="btn-add"
+
+            onclick="addToCart({
+
+                name:'Healthy Bowl',
+
+                price:200
+
+            })">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Dessert -->
+
+    <div class="menu-card">
+
+        <img src="images/desserts.jpg">
+
+        <div class="menu-card__body">
+
+            <h5>Dessert</h5>
+
+            <p>Chocolate brownie with ice cream.</p>
+
+            <h3>₹150</h3>
+
+            <button class="btn-add"
+
+            onclick="addToCart({
+
+                name:'Dessert',
+
+                price:150
+
+            })">
+
+                Add To Cart
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Go to Cart -->
+
+<div class="go-cart-container">
+
+    <button
+        class="btn-primary-custom go-cart-btn"
+        onclick="goToCart()">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        Go To Cart
+
+    </button>
+
+</div>
+
+<script src="js/common.js"></script>
+<script src="js/menu.js"></script>
+
+</body>
+
+</html>
