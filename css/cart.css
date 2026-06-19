@@ -247,6 +247,7 @@
     .cart-price{
         text-align:right;
         font-size:18px;
+        margin-right: 10px;
     }
 
     .quantity-box{
