@@ -6,7 +6,7 @@
 
 A beautifully designed **Food Ordering Website** built using **HTML5, CSS3, Bootstrap, and JavaScript**. The project offers an engaging user experience with responsive layouts, interactive menu sections, and a simple order placement interface.
 
-<img src="./screenshots/home.png" width="100%">
+<img src="./images/screenshots/home.png" width="100%">
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
@@ -44,49 +44,49 @@ The website is designed with responsiveness and simplicity in mind, ensuring a s
 
 ## 🏠 Home Page
 
-<img src="./screenshots/home.png" width="100%">
+<img src="./images/screenshots/home.png" width="100%">
 
 ---
 
 ## ⭐ Why Choose Us
 
-<img src="./screenshots/whyChooseUs.png" width="100%">
+<img src="./images/screenshots/whyChooseUs.png" width="100%">
 
 ---
 
 ## 🍽️ Explore Menu
 
-<img src="./screenshots/ExploreMenu.png" width="100%">
+<img src="./images/screenshots/ExploreMenu.png" width="100%">
 
 ---
 
 ## 🚚 Delivery & Payment
 
-<img src="./screenshots/DeliveryPayment.png" width="100%">
+<img src="./images/screenshots/DeliveryPayment.png" width="100%">
 
 ---
 
 ## 📋 Menu Page
 
-<img src="./screenshots/menu.png" width="100%">
+<img src="./images/screenshots/menu.png" width="100%">
 
 ---
 
 ## 🛒 Cart
 
-<img src="./screenshots/cart.png" width="100%">
+<img src="./images/screenshots/cart.png" width="100%">
 
 ---
 
 ## 📦 Order Details
 
-<img src="./screenshots/orderDetails.png" width="100%">
+<img src="./images/screenshots/orderDetails.png" width="100%">
 
 ---
 
 ## ✅ Place Order
 
-<img src="./screenshots/placeOrder.png" width="100%">
+<img src="./images/screenshots/placeOrder.png" width="100%">
 
 ---
 
