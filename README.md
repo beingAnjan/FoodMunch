@@ -6,7 +6,7 @@
 
 A beautifully designed **Food Ordering Website** built using **HTML5, CSS3, Bootstrap, and JavaScript**. The project offers an engaging user experience with responsive layouts, interactive menu sections, and a simple order placement interface.
 
-<img src="./screenshots/home.png" alt="Food Munch Banner" width="85%">
+<img src="./screenshots/home.png.png" alt="Food Munch Banner" width="85%">
 
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
